@@ -1,0 +1,73 @@
+import { Button } from "@/components/ui/button";
+
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      <header className="bg-gradient-to-r from-blue-500 to-indigo-600 py-16 text-center text-white">
+        <h1 className="text-4xl font-bold mb-4">365Assist.ai</h1>
+        <p className="text-xl">AI-Powered Support & Training for Microsoft 365 Users</p>
+        <Button className="mt-6 text-lg px-6 py-3">Start Free Trial</Button>
+      </header>
+
+      <section className="p-8 grid gap-8 md:grid-cols-3 text-center">
+        <div>
+          <h2 className="text-xl font-semibold mb-2">💬 24/7 Instant AI Support</h2>
+          <p>Resolve Office 365 issues instantly with our intelligent chatbot.</p>
+        </div>
+        <div>
+          <h2 className="text-xl font-semibold mb-2">📘 Personalized Training Modules</h2>
+          <p>Interactive, AI-curated courses tailored to your skill level.</p>
+        </div>
+        <div>
+          <h2 className="text-xl font-semibold mb-2">📊 Actionable Analytics</h2>
+          <p>Monitor skill gaps and productivity with smart dashboards.</p>
+        </div>
+      </section>
+
+      <section className="bg-gray-100 py-12 text-center">
+        <h2 className="text-2xl font-bold mb-6">Choose Your Plan</h2>
+        <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto px-4">
+          <div className="border rounded-xl p-6 shadow">
+            <h3 className="text-lg font-semibold">Starter</h3>
+            <p className="my-2 text-2xl font-bold">$9/mo</p>
+            <ul className="text-sm space-y-1">
+              <li>Basic AI Support</li>
+              <li>Foundational Training</li>
+              <li>Basic Analytics</li>
+            </ul>
+            <Button className="mt-4 w-full">Get Started</Button>
+          </div>
+          <div className="border rounded-xl p-6 shadow">
+            <h3 className="text-lg font-semibold">Pro</h3>
+            <p className="my-2 text-2xl font-bold">$19/mo</p>
+            <ul className="text-sm space-y-1">
+              <li>Enhanced Support</li>
+              <li>Comprehensive Training</li>
+              <li>Productivity Analytics</li>
+            </ul>
+            <Button className="mt-4 w-full">Start Pro</Button>
+          </div>
+          <div className="border rounded-xl p-6 shadow">
+            <h3 className="text-lg font-semibold">Enterprise</h3>
+            <p className="my-2 text-2xl font-bold">Custom</p>
+            <ul className="text-sm space-y-1">
+              <li>Dedicated Support</li>
+              <li>Personalized Onboarding</li>
+              <li>Advanced Dashboards</li>
+            </ul>
+            <Button className="mt-4 w-full">Contact Sales</Button>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-gray-900 text-white py-8 text-center">
+        <p className="mb-2">&copy; {new Date().getFullYear()} 365Assist.ai. All rights reserved.</p>
+        <div className="space-x-4">
+          <a href="#" className="underline">Privacy</a>
+          <a href="#" className="underline">Terms</a>
+          <a href="#" className="underline">Contact</a>
+        </div>
+      </footer>
+    </div>
+  );
+}
